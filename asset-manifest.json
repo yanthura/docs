@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/docs/static/css/main.dbf3bb6d.chunk.css",
+    "main.js": "/docs/static/js/main.cbbff4e0.chunk.js",
+    "main.js.map": "/docs/static/js/main.cbbff4e0.chunk.js.map",
+    "runtime-main.js": "/docs/static/js/runtime-main.d6441ba2.js",
+    "runtime-main.js.map": "/docs/static/js/runtime-main.d6441ba2.js.map",
+    "static/js/2.bb617de4.chunk.js": "/docs/static/js/2.bb617de4.chunk.js",
+    "static/js/2.bb617de4.chunk.js.map": "/docs/static/js/2.bb617de4.chunk.js.map",
+    "index.html": "/docs/index.html",
+    "static/css/main.dbf3bb6d.chunk.css.map": "/docs/static/css/main.dbf3bb6d.chunk.css.map",
+    "static/js/2.bb617de4.chunk.js.LICENSE.txt": "/docs/static/js/2.bb617de4.chunk.js.LICENSE.txt",
+    "static/media/avatar-1.3921191a.jpg": "/docs/static/media/avatar-1.3921191a.jpg",
+    "static/media/avatar-2.feb0f89d.jpg": "/docs/static/media/avatar-2.feb0f89d.jpg",
+    "static/media/avatar-3.2cfd5ba6.jpg": "/docs/static/media/avatar-3.2cfd5ba6.jpg",
+    "static/media/avatar-4.b23e41d9.jpg": "/docs/static/media/avatar-4.b23e41d9.jpg",
+    "static/media/theme.scss": "/docs/static/media/materialdesignicons-webfont.d06df622.woff",
+    "static/media/img-1.c8a39a7a.jpg": "/docs/static/media/img-1.c8a39a7a.jpg",
+    "static/media/img-2.9ad853b2.jpg": "/docs/static/media/img-2.9ad853b2.jpg",
+    "static/media/img-4.d54eed02.jpg": "/docs/static/media/img-4.d54eed02.jpg",
+    "static/media/img-6.22e5e101.jpg": "/docs/static/media/img-6.22e5e101.jpg",
+    "static/media/img-7.f6859a84.jpg": "/docs/static/media/img-7.f6859a84.jpg",
+    "static/media/layout-1.d6de7ba6.jpg": "/docs/static/media/layout-1.d6de7ba6.jpg",
+    "static/media/layout-2.39f5fc81.jpg": "/docs/static/media/layout-2.39f5fc81.jpg",
+    "static/media/layout-3.ab7913ef.jpg": "/docs/static/media/layout-3.ab7913ef.jpg",
+    "static/media/logo-light.96c274da.svg": "/docs/static/media/logo-light.96c274da.svg",
+    "static/media/logo.a0143fa8.svg": "/docs/static/media/logo.a0143fa8.svg",
+    "static/media/megamenu-img.8b069df4.png": "/docs/static/media/megamenu-img.8b069df4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d6441ba2.js",
+    "static/js/2.bb617de4.chunk.js",
+    "static/css/main.dbf3bb6d.chunk.css",
+    "static/js/main.cbbff4e0.chunk.js"
+  ]
+}
