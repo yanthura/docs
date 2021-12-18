@@ -1,0 +1,1 @@
+# Yanthura docs made by GitHub pages
