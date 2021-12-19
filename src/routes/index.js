@@ -4,8 +4,8 @@ import BlogDetails from "../pages/Blog/BlogDetails"
 
 const publicRoutes = [
   { path: "/", component: BlogList },
-  { path: "/blog-grid", component: BlogGrid },
-  { path: "/blog-details", component: BlogDetails },
+  // { path: "/blog-grid", component: BlogGrid },
+  { path: "/article/:articleID/:articleTitle", component: BlogDetails },
 ]
 
 export { publicRoutes }

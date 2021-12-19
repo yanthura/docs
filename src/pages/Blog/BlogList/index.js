@@ -16,8 +16,6 @@ const Index = () => {
           <title>Yanthura</title>
         </MetaTags>
         <Container fluid>
-          <h4></h4>
-          {/* <Breadcrumbs title="Blog" breadcrumbItem="Blog List" /> */}
           <Row>
             <BlogList />
             <MenuListBar />

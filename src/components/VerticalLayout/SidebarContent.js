@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // //Import Scrollbar
 import SimpleBar from "simplebar-react";
@@ -11,10 +11,12 @@ import { Link } from "react-router-dom";
 
 //i18n
 import { withTranslation } from "react-i18next";
+import axios from "axios";
 
 const SidebarContent = props => {
-  const ref = useRef();
-  // Use ComponentDidMount and ComponentDidUpdate method symultaniously
+  const ref = useRef()
+  const [menuList, setMenuList] = useState([])
+
   useEffect(() => {
     const pathName = props.location.pathname;
 
@@ -48,6 +50,13 @@ const SidebarContent = props => {
       }
     }
   }
+
+  useEffect(() => {
+    axios.get("http://localhost:4467/api/content/docs/menu").then((response) => {
+      setMenuList(response.data.results)
+      console.log(response.data)
+    }).catch((error) => console.log(error))
+  }, [])
 
   function activateParentDropdown(item) {
     item.classList.add("active");
@@ -91,31 +100,15 @@ const SidebarContent = props => {
     <React.Fragment>
       <SimpleBar className="h-100" ref={ref}>
         <div id="sidebar-menu">
-          <ul className="metismenu list-unstyled" id="side-menu">
+          <ul className="list-unstyled" id="side-menu">
             <li className="menu-title">{props.t("Topics")}</li>
-            <li>
-              <Link to="/#" className="has-arrow ">
-                <span>{props.t("Start with creating an account in yanthura")}</span>
-              </Link>
-              <ul className="sub-menu" aria-expanded="true">
-                <li>
-                  <Link to="/#">{props.t("Level 1.1")}</Link>
-                </li>
-                <li>
-                  <Link to="/#" className="has-arrow">
-                    {props.t("Level 1.2")}
-                  </Link>
-                  <ul className="sub-menu" aria-expanded="true">
-                    <li>
-                      <Link to="/#">{props.t("Level 2.1")}</Link>
-                    </li>
-                    <li>
-                      <Link to="/#">{props.t("Level 2.2")}</Link>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+            {menuList.map(menu =>
+              <li key={menu.did}>
+                <Link to={`/article/${menu.did}/${menu.title}`}>
+                  <span>{menu.title}</span>
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </SimpleBar>
